@@ -1,0 +1,17 @@
+{% macro youtube_embed(id, alt="YouTube Video Thumbnail") %}
+<div class="youtube-thumbnail-link paragraph-like">
+    <a href="https://www.youtube.com/watch?v={{ id }}{{ extra or '' }}" target="_blank" rel="noopener" class="noclip" data-youtube-id="{{ id }}" data-extra="{{ extra or '' }}">
+        <div class="thumbnail-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <img
+                src="https://img.youtube.com/vi/{{ id }}/maxresdefault.jpg"
+                alt="{{ alt | escape_for_attribute }}"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; overflow: hidden; border-radius: 8px;"
+                onerror="this.onerror=null; this.src='https://img.youtube.com/vi/{{ id }}/0.jpg';"
+            />
+            <div class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; background-color: rgba(0,0,0,0.7); border-radius: 8px; display: flex; justify-content: center; align-items: center;">
+                <div style="width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 20px; border-color: transparent transparent transparent #fff;"></div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endmacro %}
