@@ -64,7 +64,7 @@ Its address is:
 
 And its VAT number is **FR41 934 149 618** (see the symmetry?).
 
-The owner and manager of bearcove is Amos Wenger, you can reach them at [admin@bearcove.eu](admin@bearcove.eu).
+The owner and manager of bearcove is Amos Wenger, you can reach them at [admin@bearcove.eu](mailto:admin@bearcove.eu).
 
 This website and other bearcove properties like [fasterthanli.me](https://fasterthanli.me) are
 hosted on [Hetzner](https://hetzner.com), whereas DNS is handled by [gcore](https://gcore.com).
