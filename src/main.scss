@@ -1,5 +1,9 @@
 html {
     color-scheme: light dark;
+
+    @media (prefers-color-scheme: dark) {
+        --lightningcss-dark: 1;
+    }
 }
 
 * {
