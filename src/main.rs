@@ -189,6 +189,10 @@ fn App() -> Element {
 }
 
 const CSS: &str = r#"
+:root {
+    color-scheme: light dark;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -198,8 +202,8 @@ const CSS: &str = r#"
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fafafa;
+    color: light-dark(#333, #e2e8f0);
+    background-color: light-dark(#fafafa, #0f172a);
 }
 
 .container {
@@ -214,21 +218,21 @@ body {
 .header {
     padding: 60px 0 40px;
     text-align: center;
-    border-bottom: 1px solid #e1e5e9;
+    border-bottom: 1px solid light-dark(#e1e5e9, #334155);
     margin-bottom: 40px;
 }
 
 .logo {
     font-size: 3rem;
     font-weight: 700;
-    color: #2d3748;
+    color: light-dark(#2d3748, #f1f5f9);
     margin-bottom: 8px;
     letter-spacing: -0.025em;
 }
 
 .tagline {
     font-size: 1.1rem;
-    color: #718096;
+    color: light-dark(#718096, #94a3b8);
     font-weight: 400;
 }
 
@@ -244,11 +248,11 @@ body {
     font-size: 1.2rem;
     line-height: 1.7;
     margin-bottom: 40px;
-    color: #4a5568;
+    color: light-dark(#4a5568, #cbd5e1);
 }
 
 .hero-text strong {
-    color: #2d3748;
+    color: light-dark(#2d3748, #f1f5f9);
     font-weight: 600;
 }
 
@@ -260,7 +264,7 @@ body {
     margin-bottom: 20px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: light-dark(0 10px 25px rgba(0, 0, 0, 0.1), 0 10px 25px rgba(0, 0, 0, 0.5));
 }
 
 .video-container iframe {
@@ -279,15 +283,15 @@ body {
 .section h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: #2d3748;
+    color: light-dark(#2d3748, #f1f5f9);
     margin-bottom: 20px;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid light-dark(#e2e8f0, #475569);
     padding-bottom: 8px;
 }
 
 .section p {
     margin-bottom: 16px;
-    color: #4a5568;
+    color: light-dark(#4a5568, #cbd5e1);
     font-size: 1.05rem;
 }
 
@@ -300,12 +304,12 @@ body {
     margin-bottom: 12px;
     padding-left: 20px;
     position: relative;
-    color: #4a5568;
+    color: light-dark(#4a5568, #cbd5e1);
 }
 
 .project-list li::before, .content-list li::before {
     content: "•";
-    color: #718096;
+    color: light-dark(#718096, #94a3b8);
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -320,29 +324,29 @@ body {
 }
 
 a {
-    color: #3182ce;
+    color: light-dark(#3182ce, #60a5fa);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #2c5282;
+    color: light-dark(#2c5282, #3b82f6);
     text-decoration: underline;
 }
 
 .legal {
-    background-color: #f7fafc;
+    background-color: light-dark(#f7fafc, #1e293b);
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid #e2e8f0;
+    border-left: 4px solid light-dark(#e2e8f0, #475569);
 }
 
 .address {
-    background-color: #edf2f7;
+    background-color: light-dark(#edf2f7, #334155);
     padding: 20px;
-    border-left: 4px solid #cbd5e0;
+    border-left: 4px solid light-dark(#cbd5e0, #64748b);
     font-style: italic;
-    color: #4a5568;
+    color: light-dark(#4a5568, #cbd5e1);
     margin: 20px 0;
     line-height: 1.8;
 }
@@ -350,9 +354,9 @@ a:hover {
 .footer {
     margin-top: 60px;
     padding: 30px 0;
-    border-top: 1px solid #e1e5e9;
+    border-top: 1px solid light-dark(#e1e5e9, #334155);
     text-align: center;
-    color: #718096;
+    color: light-dark(#718096, #94a3b8);
     font-size: 0.9rem;
 }
 
