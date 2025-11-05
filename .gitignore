@@ -7,3 +7,8 @@ vite.config.js.timestamp-*
 stats.html
 /.snug
 /.home
+
+
+# Added by cargo
+
+/target
