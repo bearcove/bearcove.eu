@@ -1,0 +1,94 @@
+# Cargo build artifacts
+**/target/
+target/
+**/dist/
+dist/
+
+# Rust backup files
+**/*.rs.bk
+
+# Development and IDE files
+.DS_Store
+.vscode/
+.idea/
+.zed/
+*.swp
+*.swo
+*~
+
+# Git directory
+.git/
+.gitignore
+.gitattributes
+
+# Documentation and development files
+README.md
+docs/
+*.md
+
+# Development configuration
+Justfile
+Dioxus.toml
+
+# Node.js dependencies (if any)
+node_modules/
+**/node_modules/
+
+# Temporary and cache files
+.lith
+.snug
+.home
+vite.config.js.timestamp-*
+stats.html
+*.log
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+
+# Environment files
+.env*
+.envrc
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Test files
+*_test.rs
+*_tests.rs
+test_*
+tests/
+
+# Backup and temporary files
+*~
+*.tmp
+*.temp
+*~lock~
+
+# License files
+LICENSE*
+LICENSES/
+
+# Coverage reports
+coverage/
+*.profraw
+
+# Editor artifacts
+.*.sw?
+Session.vim
+.netrwhist
+
+# macOS
+.DS_Store?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
