@@ -1,0 +1,6 @@
+content content
+output public
+stable_assets (favicon.jxl)
+link_check {
+    skip_domains (patreon.com)
+}

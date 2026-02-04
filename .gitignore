@@ -1,14 +1,2 @@
-/dist
-/node_modules
-.lith
-.snug
-.home
-vite.config.js.timestamp-*
-stats.html
-/.snug
-/.home
-
-
-# Added by cargo
-
-/target
+public/
+.cache/

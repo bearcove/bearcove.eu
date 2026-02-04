@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    {% if config.description %}<meta name="description" content="{{ config.description }}">{% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image/jxl" href="/favicon.jxl">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="/" class="nav-logo">bearcove</a>
+                <ul class="nav-links">
+                    <li><a href="https://fasterthanli.me">Blog</a></li>
+                    <li><a href="https://youtube.com/@fasterthanlime">YouTube</a></li>
+                    <li><a href="https://github.com/bearcove">GitHub</a></li>
+                    <li><a href="/legal/">Legal</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            {% block content %}{% endblock content %}
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 bearcove SARL &mdash; <a href="/legal/">Legal</a></p>
+                <p class="footer-links">
+                    <a href="https://github.com/sponsors/fasterthanlime">Sponsors</a>
+                    <a href="https://patreon.com/fasterthanlime">Patreon</a>
+                    <a href="mailto:admin@bearcove.eu">Contact</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
