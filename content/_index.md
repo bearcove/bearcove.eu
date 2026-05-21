@@ -17,13 +17,13 @@ bearcove maintains big Rust projects:
 
   * [**facet**](https://facet.rs) — reflection for Rust, powering serialization, deserialization, pretty printing, and more
   * [**dodeca**](https://dodeca.bearcove.eu/) — a fully incremental static site generator where dev mode = production mode
-  * [**roam**](https://roam.bearcove.eu/) — Rust-native RPC, friendly to other languages via facet-powered codegen
-  * [**picante**](https://picante.bearcove.eu/) — an async incremental query runtime, like Salsa but Tokio-friendly
+  * [**vox**](https://vox.bearcove.eu/) — Rust-native RPC where Rust traits are the schema, with generated TypeScript and Swift clients
   * [**vixen**](https://github.com/bearcove/vixen) — a Rust build system
+  * [**stax**](https://stax.bearcove.eu/) — a sampling profiler for macOS with live flamegraphs, top-N functions, and annotated disassembly
+  * [**figue**](https://github.com/bearcove/figue) — a CLI, config file, and environment variables parser, based on facet
 
 Some smaller crates:
 
-  * [**figue**](https://github.com/bearcove/figue) — a CLI, config file, and environment variables parser, based on facet
   * [**rediff**](https://github.com/bearcove/rediff) — a diff and assertion library for Facet types
   * [**squiggles**](https://github.com/bearcove/squiggles) — an LSP that runs cargo nextest and reports back as diagnostics
   * [**rc-zip**](https://github.com/bearcove/rc-zip) — a sans-io ZIP implementation in Rust focused on compatibility
