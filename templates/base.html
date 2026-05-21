@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     {% if config.description %}<meta name="description" content="{{ config.description }}">{% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <link rel="icon" type="image/jxl" href="/favicon.jxl">
 </head>
@@ -25,13 +22,13 @@
             </nav>
         </header>
 
-        <main class="main-content">
+        <main class="{% block main_class %}main-content{% endblock main_class %}">
             {% block content %}{% endblock content %}
         </main>
 
         <footer class="footer">
             <div class="footer-content">
-                <p>&copy; 2024 bearcove SARL &mdash; <a href="/legal/">Legal</a></p>
+                <p>&copy; 2024&ndash;{{ now(format="%Y") }} bearcove SARL &mdash; <a href="/legal/">Legal</a></p>
                 <p class="footer-links">
                     <a href="https://github.com/sponsors/fasterthanlime">Sponsors</a>
                     <a href="https://patreon.com/fasterthanlime">Patreon</a>

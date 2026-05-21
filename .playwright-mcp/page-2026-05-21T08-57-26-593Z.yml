@@ -1,0 +1,162 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link "bearcove" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Blog" [ref=e8] [cursor=pointer]:
+            - /url: https://fasterthanli.me
+        - listitem [ref=e9]:
+          - link "YouTube" [ref=e10] [cursor=pointer]:
+            - /url: https://youtube.com/@fasterthanlime
+        - listitem [ref=e11]:
+          - link "GitHub" [ref=e12] [cursor=pointer]:
+            - /url: https://github.com/bearcove
+        - listitem [ref=e13]:
+          - link "Legal" [ref=e14] [cursor=pointer]:
+            - /url: /legal/
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - heading "Teaching Rust, making videos, and maintaining the open-source software we wish existed." [level=1] [ref=e17]:
+        - text: Teaching Rust, making videos, and maintaining the
+        - emphasis [ref=e18]: open-source software we wish existed
+        - text: .
+      - paragraph [ref=e20]:
+        - text: bearcove was founded by
+        - link "@fasterthanlime" [ref=e21] [cursor=pointer]:
+          - /url: https://fasterthanli.me
+        - text: in late 2024 to keep doing what they do best.
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Open source
+        - paragraph [ref=e25]: Big Rust projects, maintained in the open.
+      - generic [ref=e26]:
+        - link "facet reflection Reflection for Rust — the engine behind serialization, deserialization, and pretty-printing." [ref=e27] [cursor=pointer]:
+          - /url: https://facet.rs
+          - img [ref=e30]
+          - heading "facet" [level=2] [ref=e33]
+          - generic [ref=e34]: reflection
+          - paragraph [ref=e35]: Reflection for Rust — the engine behind serialization, deserialization, and pretty-printing.
+        - link "dodeca static sites A fully incremental static site generator where dev mode is production mode." [ref=e36] [cursor=pointer]:
+          - /url: https://dodeca.bearcove.eu/
+          - img [ref=e39]
+          - heading "dodeca" [level=2] [ref=e42]
+          - generic [ref=e43]: static sites
+          - paragraph [ref=e44]: A fully incremental static site generator where dev mode is production mode.
+        - link "vox rpc Rust-native RPC where traits are the schema, with generated TypeScript and Swift clients." [ref=e45] [cursor=pointer]:
+          - /url: https://vox.bearcove.eu/
+          - img [ref=e48]
+          - heading "vox" [level=2] [ref=e51]
+          - generic [ref=e52]: rpc
+          - paragraph [ref=e53]: Rust-native RPC where traits are the schema, with generated TypeScript and Swift clients.
+        - link "vixen build system A build system for Rust, designed from the ground up." [ref=e54] [cursor=pointer]:
+          - /url: https://github.com/bearcove/vixen
+          - img [ref=e57]
+          - heading "vixen" [level=2] [ref=e60]
+          - generic [ref=e61]: build system
+          - paragraph [ref=e62]: A build system for Rust, designed from the ground up.
+        - 'link "stax profiler A sampling profiler for macOS: live flamegraphs, top-N functions, annotated disassembly." [ref=e63] [cursor=pointer]':
+          - /url: https://stax.bearcove.eu/
+          - img [ref=e66]
+          - heading "stax" [level=2] [ref=e69]
+          - generic [ref=e70]: profiler
+          - paragraph [ref=e71]: "A sampling profiler for macOS: live flamegraphs, top-N functions, annotated disassembly."
+        - link "figue config A parser for CLI arguments, config files, and environment variables — powered by facet." [ref=e72] [cursor=pointer]:
+          - /url: https://github.com/bearcove/figue
+          - img [ref=e75]
+          - heading "figue" [level=2] [ref=e78]
+          - generic [ref=e79]: config
+          - paragraph [ref=e80]: A parser for CLI arguments, config files, and environment variables — powered by facet.
+      - generic [ref=e81]:
+        - generic [ref=e82]: Smaller crates
+        - generic [ref=e83]:
+          - link "rediff A diff and assertion library for Facet types." [ref=e84] [cursor=pointer]:
+            - /url: https://github.com/bearcove/rediff
+            - generic [ref=e85]: rediff
+            - generic [ref=e86]: A diff and assertion library for Facet types.
+          - link "squiggles An LSP that runs cargo nextest and reports results as diagnostics." [ref=e87] [cursor=pointer]:
+            - /url: https://github.com/bearcove/squiggles
+            - generic [ref=e88]: squiggles
+            - generic [ref=e89]: An LSP that runs cargo nextest and reports results as diagnostics.
+          - link "rc-zip A sans-io ZIP implementation focused on real-world compatibility." [ref=e90] [cursor=pointer]:
+            - /url: https://github.com/bearcove/rc-zip
+            - generic [ref=e91]: rc-zip
+            - generic [ref=e92]: A sans-io ZIP implementation focused on real-world compatibility.
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]: Content creation
+        - paragraph [ref=e96]: Long-form writing and videos, every week.
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - paragraph [ref=e99]:
+            - text: bearcove publishes long-form Rust writing at
+            - link "fasterthanli.me" [ref=e100] [cursor=pointer]:
+              - /url: https://fasterthanli.me
+            - text: and a steady stream of tech videos on
+            - link "YouTube" [ref=e101] [cursor=pointer]:
+              - /url: https://youtube.com/@fasterthanlime
+            - text: .
+          - paragraph [ref=e102]:
+            - text: Together with
+            - link "OneVariable" [ref=e103] [cursor=pointer]:
+              - /url: https://onevariable.com
+            - text: ", it co-produces the"
+            - link "Self-Directed Research" [ref=e104] [cursor=pointer]:
+              - /url: https://sdr-podcast.com
+            - text: podcast.
+          - paragraph [ref=e105]:
+            - text: This work is funded through
+            - link "GitHub Sponsors" [ref=e106] [cursor=pointer]:
+              - /url: https://github.com/sponsors/fasterthanlime
+            - text: and
+            - link "Patreon" [ref=e107] [cursor=pointer]:
+              - /url: https://patreon.com/fasterthanlime
+            - text: .
+        - iframe [ref=e109]:
+          - generic [active] [ref=f5e1]:
+            - generic "YouTube Video Player" [ref=f5e3]
+            - generic [ref=f5e5]:
+              - generic:
+                - generic:
+                  - button "Play video" [ref=f5e10] [cursor=pointer]:
+                    - generic [ref=f5e13]:
+                      - img
+                  - button "Hide player controls" [ref=f5e14] [cursor=pointer]
+                  - generic [ref=f5e16]:
+                    - generic [ref=f5e21]:
+                      - generic [ref=f5e22]:
+                        - link "The promise of Rust" [ref=f5e23] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=zo6yZisg7N0
+                        - link "fasterthanlime" [ref=f5e24] [cursor=pointer]:
+                          - /url: /channel/UCs4fQRyl1TJvoeOdekW6lYA
+                          - generic [ref=f5e25]: fasterthanlime
+                      - generic [ref=f5e26]:
+                        - button [ref=f5e27] [cursor=pointer]
+                        - generic [ref=f5e29]:
+                          - generic: fasterthanlime
+                          - generic: 58K subscribers
+                    - generic [ref=f5e30]:
+                      - button "Share" [ref=f5e33] [cursor=pointer]:
+                        - generic [ref=f5e37]:
+                          - img
+                      - link "Watch on YouTube" [ref=f5e44] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=zo6yZisg7N0
+                        - generic [ref=f5e47]:
+                          - text: Watch on
+                          - img [ref=f5e49]:
+                            - generic [ref=f5e51]:
+                              - img
+  - contentinfo [ref=e110]:
+    - generic [ref=e111]:
+      - paragraph [ref=e112]:
+        - text: © 2024–2026 bearcove SARL —
+        - link "Legal" [ref=e113] [cursor=pointer]:
+          - /url: /legal/
+      - paragraph [ref=e114]:
+        - link "Sponsors" [ref=e115] [cursor=pointer]:
+          - /url: https://github.com/sponsors/fasterthanlime
+        - link "Patreon" [ref=e116] [cursor=pointer]:
+          - /url: https://patreon.com/fasterthanlime
+        - link "Contact" [ref=e117] [cursor=pointer]:
+          - /url: mailto:admin@bearcove.eu

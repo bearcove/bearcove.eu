@@ -2,6 +2,72 @@
 
 {% block title %}{{ section.title }} &mdash; {{ config.description }}{% endblock title %}
 
+{% block main_class %}landing{% endblock main_class %}
+
 {% block content %}
-{{ section.content | safe }}
+<section class="hero">
+    <h1 class="hero-statement">{{ section.extra.hero | safe }}</h1>
+    <div class="hero-sub">{{ section.content | safe }}</div>
+</section>
+
+<section class="projects">
+    <div class="section-head">
+        <span class="eyebrow">Open source</span>
+        <p class="section-note">Big Rust projects, maintained in the open.</p>
+    </div>
+
+    <div class="project-grid">
+        {% for p in section.extra.projects %}
+        <a class="project-card" href="{{ p.url }}" style="--i: {{ loop.index0 }}">
+            <div class="pc-head">
+                <span class="pc-index"></span>
+                <svg class="pc-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </div>
+            <h2 class="pc-name">{{ p.name }}</h2>
+            <span class="pc-kind">{{ p.kind }}</span>
+            <p class="pc-tagline">{{ p.tagline }}</p>
+        </a>
+        {% endfor %}
+    </div>
+
+    <div class="crates">
+        <span class="eyebrow eyebrow-quiet">Smaller crates</span>
+        <div class="crate-grid">
+            {% for c in section.extra.crates %}
+            <a class="crate" href="{{ c.url }}">
+                <span class="crate-name">{{ c.name }}</span>
+                <span class="crate-tagline">{{ c.tagline }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="content-creation">
+    <div class="section-head">
+        <span class="eyebrow">Content creation</span>
+        <p class="section-note">Long-form writing and videos, every week.</p>
+    </div>
+
+    <div class="cc-layout">
+        <div class="cc-text">
+            <p>bearcove publishes long-form Rust writing at
+            <a href="https://fasterthanli.me">fasterthanli.me</a> and a steady
+            stream of tech videos on
+            <a href="https://youtube.com/@fasterthanlime">YouTube</a>.</p>
+
+            <p>Together with <a href="https://onevariable.com">OneVariable</a>,
+            it co-produces the
+            <a href="https://sdr-podcast.com">Self-Directed Research</a> podcast.</p>
+
+            <p class="cc-funding">This work is funded through
+            <a href="https://github.com/sponsors/fasterthanlime">GitHub Sponsors</a>
+            and <a href="https://patreon.com/fasterthanlime">Patreon</a>.</p>
+        </div>
+
+        <div class="cc-video">
+            <iframe src="https://www.youtube.com/embed/zo6yZisg7N0" title="bearcove on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
 {% endblock content %}

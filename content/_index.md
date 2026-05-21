@@ -1,46 +1,61 @@
 +++
 title = "bearcove"
 description = "Teaching Rust, making videos, maintaining open-source software"
+
+[extra]
+hero = "Teaching Rust, making videos, and maintaining the <em>open-source software we wish existed</em>."
+
+[[extra.projects]]
+name = "facet"
+url = "https://facet.rs"
+kind = "reflection"
+tagline = "Reflection for Rust — the engine behind serialization, deserialization, and pretty-printing."
+
+[[extra.projects]]
+name = "dodeca"
+url = "https://dodeca.bearcove.eu/"
+kind = "static sites"
+tagline = "A fully incremental static site generator where dev mode is production mode."
+
+[[extra.projects]]
+name = "vox"
+url = "https://vox.bearcove.eu/"
+kind = "rpc"
+tagline = "Rust-native RPC where traits are the schema, with generated TypeScript and Swift clients."
+
+[[extra.projects]]
+name = "vixen"
+url = "https://github.com/bearcove/vixen"
+kind = "build system"
+tagline = "A build system for Rust, designed from the ground up."
+
+[[extra.projects]]
+name = "stax"
+url = "https://stax.bearcove.eu/"
+kind = "profiler"
+tagline = "A sampling profiler for macOS: live flamegraphs, top-N functions, annotated disassembly."
+
+[[extra.projects]]
+name = "figue"
+url = "https://github.com/bearcove/figue"
+kind = "config"
+tagline = "A parser for CLI arguments, config files, and environment variables — powered by facet."
+
+[[extra.crates]]
+name = "rediff"
+url = "https://github.com/bearcove/rediff"
+tagline = "A diff and assertion library for Facet types."
+
+[[extra.crates]]
+name = "squiggles"
+url = "https://github.com/bearcove/squiggles"
+tagline = "An LSP that runs cargo nextest and reports results as diagnostics."
+
+[[extra.crates]]
+name = "rc-zip"
+url = "https://github.com/bearcove/rc-zip"
+tagline = "A sans-io ZIP implementation focused on real-world compatibility."
 +++
 
-**bearcove** was founded by [@fasterthanlime](https://fasterthanli.me) in late
-2024 to keep doing what they do best: teach Rust, make videos, and maintain
-open-source software.
-
-<div class="video-container">
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/zo6yZisg7N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-## Open source
-
-bearcove maintains big Rust projects:
-
-  * [**facet**](https://facet.rs) — reflection for Rust, powering serialization, deserialization, pretty printing, and more
-  * [**dodeca**](https://dodeca.bearcove.eu/) — a fully incremental static site generator where dev mode = production mode
-  * [**vox**](https://vox.bearcove.eu/) — Rust-native RPC where Rust traits are the schema, with generated TypeScript and Swift clients
-  * [**vixen**](https://github.com/bearcove/vixen) — a Rust build system
-  * [**stax**](https://stax.bearcove.eu/) — a sampling profiler for macOS with live flamegraphs, top-N functions, and annotated disassembly
-  * [**figue**](https://github.com/bearcove/figue) — a CLI, config file, and environment variables parser, based on facet
-
-Some smaller crates:
-
-  * [**rediff**](https://github.com/bearcove/rediff) — a diff and assertion library for Facet types
-  * [**squiggles**](https://github.com/bearcove/squiggles) — an LSP that runs cargo nextest and reports back as diagnostics
-  * [**rc-zip**](https://github.com/bearcove/rc-zip) — a sans-io ZIP implementation in Rust focused on compatibility
-
-## Content creation
-
-bearcove operates:
-
-  * [fasterthanli.me](https://fasterthanli.me) with long-form Rust content
-  * [YouTube @fasterthanlime](https://youtube.com/@fasterthanlime) with a variety of tech videos
-
-That content receives funding through:
-
-  * [GitHub Sponsors](https://github.com/sponsors/fasterthanlime)
-  * [Patreon](https://patreon.com/fasterthanlime)
-
-Additionally, bearcove cooperates with [OneVariable UG](https://onevariable.com) to produce:
-
-  * the [Self-Directed Research](https://sdr-podcast.com) podcast
-
+bearcove was founded by [@fasterthanlime](https://fasterthanli.me) in late 2024
+to keep doing what they do best.

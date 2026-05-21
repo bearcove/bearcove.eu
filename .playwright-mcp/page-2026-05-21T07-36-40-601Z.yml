@@ -1,0 +1,163 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link "bearcove" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Blog" [ref=e8] [cursor=pointer]:
+            - /url: https://fasterthanli.me
+        - listitem [ref=e9]:
+          - link "YouTube" [ref=e10] [cursor=pointer]:
+            - /url: https://youtube.com/@fasterthanlime
+        - listitem [ref=e11]:
+          - link "GitHub" [ref=e12] [cursor=pointer]:
+            - /url: https://github.com/bearcove
+        - listitem [ref=e13]:
+          - link "Legal" [ref=e14] [cursor=pointer]:
+            - /url: /legal/
+  - main [ref=e15]:
+    - paragraph [ref=e16]:
+      - strong [ref=e17]: bearcove
+      - text: was founded by
+      - link "@fasterthanlime" [ref=e18] [cursor=pointer]:
+        - /url: https://fasterthanli.me
+      - text: "in late 2024 to keep doing what they do best: teach Rust, make videos, and maintain open-source software."
+    - iframe [ref=e20]:
+      - generic [active] [ref=f1e1]:
+        - generic "YouTube Video Player" [ref=f1e3]
+        - generic [ref=f1e5]:
+          - generic:
+            - generic:
+              - button "Play video" [ref=f1e10] [cursor=pointer]
+              - button "Hide player controls" [ref=f1e12] [cursor=pointer]
+              - generic [ref=f1e14]:
+                - generic [ref=f1e19]:
+                  - generic [ref=f1e20]:
+                    - link "The promise of Rust" [ref=f1e21] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=zo6yZisg7N0
+                    - link "fasterthanlime" [ref=f1e22] [cursor=pointer]:
+                      - /url: /channel/UCs4fQRyl1TJvoeOdekW6lYA
+                      - generic [ref=f1e23]: fasterthanlime
+                  - generic [ref=f1e24]:
+                    - button [ref=f1e25] [cursor=pointer]
+                    - generic [ref=f1e27]:
+                      - generic: fasterthanlime
+                      - generic: 58K subscribers
+                - generic [ref=f1e28]:
+                  - button "Share" [ref=f1e31] [cursor=pointer]:
+                    - generic [ref=f1e35]:
+                      - img
+                  - link "Watch on YouTube" [ref=f1e42] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=zo6yZisg7N0
+                    - generic [ref=f1e45]:
+                      - text: Watch on
+                      - img [ref=f1e47]:
+                        - generic [ref=f1e49]:
+                          - img
+    - heading "Open source" [level=2] [ref=e21]
+    - paragraph [ref=e22]: "bearcove maintains big Rust projects:"
+    - list [ref=e23]:
+      - listitem [ref=e24]:
+        - text: —
+        - link "facet" [ref=e25] [cursor=pointer]:
+          - /url: https://facet.rs
+          - strong [ref=e26]: facet
+        - text: — reflection for Rust, powering serialization, deserialization, pretty printing, and more
+      - listitem [ref=e27]:
+        - text: —
+        - link "dodeca" [ref=e28] [cursor=pointer]:
+          - /url: https://dodeca.bearcove.eu/
+          - strong [ref=e29]: dodeca
+        - text: — a fully incremental static site generator where dev mode = production mode
+      - listitem [ref=e30]:
+        - text: —
+        - link "vox" [ref=e31] [cursor=pointer]:
+          - /url: https://vox.bearcove.eu/
+          - strong [ref=e32]: vox
+        - text: — Rust-native RPC where Rust traits are the schema, with generated TypeScript and Swift clients
+      - listitem [ref=e33]:
+        - text: —
+        - link "vixen" [ref=e34] [cursor=pointer]:
+          - /url: https://github.com/bearcove/vixen
+          - strong [ref=e35]: vixen
+        - text: — a Rust build system
+      - listitem [ref=e36]:
+        - text: —
+        - link "stax" [ref=e37] [cursor=pointer]:
+          - /url: https://stax.bearcove.eu/
+          - strong [ref=e38]: stax
+        - text: — a sampling profiler for macOS with live flamegraphs, top-N functions, and annotated disassembly
+      - listitem [ref=e39]:
+        - text: —
+        - link "figue" [ref=e40] [cursor=pointer]:
+          - /url: https://github.com/bearcove/figue
+          - strong [ref=e41]: figue
+        - text: — a CLI, config file, and environment variables parser, based on facet
+    - paragraph [ref=e42]: "Some smaller crates:"
+    - list [ref=e43]:
+      - listitem [ref=e44]:
+        - text: —
+        - link "rediff" [ref=e45] [cursor=pointer]:
+          - /url: https://github.com/bearcove/rediff
+          - strong [ref=e46]: rediff
+        - text: — a diff and assertion library for Facet types
+      - listitem [ref=e47]:
+        - text: —
+        - link "squiggles" [ref=e48] [cursor=pointer]:
+          - /url: https://github.com/bearcove/squiggles
+          - strong [ref=e49]: squiggles
+        - text: — an LSP that runs cargo nextest and reports back as diagnostics
+      - listitem [ref=e50]:
+        - text: —
+        - link "rc-zip" [ref=e51] [cursor=pointer]:
+          - /url: https://github.com/bearcove/rc-zip
+          - strong [ref=e52]: rc-zip
+        - text: — a sans-io ZIP implementation in Rust focused on compatibility
+    - heading "Content creation" [level=2] [ref=e53]
+    - paragraph [ref=e54]: "bearcove operates:"
+    - list [ref=e55]:
+      - listitem [ref=e56]:
+        - text: —
+        - link "fasterthanli.me" [ref=e57] [cursor=pointer]:
+          - /url: https://fasterthanli.me
+        - text: with long-form Rust content
+      - listitem [ref=e58]:
+        - text: —
+        - link "YouTube @fasterthanlime" [ref=e59] [cursor=pointer]:
+          - /url: https://youtube.com/@fasterthanlime
+        - text: with a variety of tech videos
+    - paragraph [ref=e60]: "That content receives funding through:"
+    - list [ref=e61]:
+      - listitem [ref=e62]:
+        - text: —
+        - link "GitHub Sponsors" [ref=e63] [cursor=pointer]:
+          - /url: https://github.com/sponsors/fasterthanlime
+      - listitem [ref=e64]:
+        - text: —
+        - link "Patreon" [ref=e65] [cursor=pointer]:
+          - /url: https://patreon.com/fasterthanlime
+    - paragraph [ref=e66]:
+      - text: Additionally, bearcove cooperates with
+      - link "OneVariable UG" [ref=e67] [cursor=pointer]:
+        - /url: https://onevariable.com
+      - text: "to produce:"
+    - list [ref=e68]:
+      - listitem [ref=e69]:
+        - text: — the
+        - link "Self-Directed Research" [ref=e70] [cursor=pointer]:
+          - /url: https://sdr-podcast.com
+        - text: podcast
+  - contentinfo [ref=e71]:
+    - generic [ref=e72]:
+      - paragraph [ref=e73]:
+        - text: © 2024 bearcove SARL —
+        - link "Legal" [ref=e74] [cursor=pointer]:
+          - /url: /legal/
+      - paragraph [ref=e75]:
+        - link "Sponsors" [ref=e76] [cursor=pointer]:
+          - /url: https://github.com/sponsors/fasterthanlime
+        - link "Patreon" [ref=e77] [cursor=pointer]:
+          - /url: https://patreon.com/fasterthanlime
+        - link "Contact" [ref=e78] [cursor=pointer]:
+          - /url: mailto:admin@bearcove.eu
