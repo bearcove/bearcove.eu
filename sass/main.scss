@@ -1,73 +1,29 @@
-// Self-hosted fonts — dodeca subsets these to the glyphs actually used.
-@font-face {
-    font-family: 'Bricolage Grotesque';
-    src: url('/fonts/bricolage-grotesque.woff2') format('woff2');
-    font-weight: 400 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Newsreader';
-    src: url('/fonts/newsreader.woff2') format('woff2');
-    font-weight: 400 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Newsreader';
-    src: url('/fonts/newsreader-italic.woff2') format('woff2');
-    font-weight: 400 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/fonts/jetbrains-mono.woff2') format('woff2');
-    font-weight: 400 500;
-    font-style: normal;
-    font-display: swap;
-}
+// Fonts loaded from Google Fonts in base.html:
+// League Spartan (display) · Commissioner (body) · Datatype (mono)
+// Shared type + cold mint-green palette with bearcove labs.
 
 :root {
-    --font-display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
-    --font-body: 'Newsreader', Georgia, 'Times New Roman', serif;
-    --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    color-scheme: light dark;
+
+    --font-display: 'League Spartan', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-body: 'Commissioner', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-mono: 'Datatype', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
     --max-width: 980px;
 
-    --color-bg: #FDFCFA;
-    --color-bg-subtle: #F5F3EF;
-    --color-text: #1a1a1a;
-    --color-text-strong: #0f0f0f;
-    --color-text-body: #2e2e2e;
-    --color-text-muted: #6b6b6b;
-    --color-link: #b5553a;
-    --color-link-hover: #8a3f2a;
-    --color-border: #e0ddd8;
-    --color-border-accent: #d0ccc5;
-    --color-accent: #d4654a;
-    --color-shadow: rgba(30, 20, 10, 0.08);
-    --color-glow: rgba(212, 101, 74, 0.10);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #131211;
-        --color-bg-subtle: #1e1c1a;
-        --color-text: #e8e4df;
-        --color-text-strong: #f5f2ed;
-        --color-text-body: #c8c3bb;
-        --color-text-muted: #8a847c;
-        --color-link: #e07a5f;
-        --color-link-hover: #f0a08a;
-        --color-border: #2a2826;
-        --color-border-accent: #3a3735;
-        --color-accent: #e07a5f;
-        --color-shadow: rgba(0, 0, 0, 0.4);
-        --color-glow: rgba(224, 122, 95, 0.12);
-    }
+    // cold mint-green, white in light / ink in dark
+    --color-bg:            light-dark(#ffffff, #080c0b);
+    --color-bg-subtle:     light-dark(#f2f3f3, #101714);
+    --color-text:          light-dark(#1a201d, #ccd4d0);
+    --color-text-strong:   light-dark(#060b09, #e6ece9);
+    --color-text-body:     light-dark(#1a201d, #ccd4d0);
+    --color-text-muted:    light-dark(#4a524d, #909a95);
+    --color-link:          light-dark(#0d8f63, #4fd6a8);
+    --color-link-hover:    light-dark(#0a6b4b, #7ee3bf);
+    --color-border:        light-dark(#ebedec, #18201c);
+    --color-border-accent: light-dark(#d9dcdb, #27302b);
+    --color-accent:        light-dark(#0d8f63, #4fd6a8);
+    --color-shadow:        light-dark(rgba(20, 40, 30, 0.07), rgba(0, 0, 0, 0.4));
+    --color-glow:          light-dark(rgba(13, 143, 99, 0.05), rgba(79, 214, 168, 0.06));
 }
 
 *, *::before, *::after {
@@ -78,7 +34,8 @@
 
 body {
     font-family: var(--font-body);
-    font-size: 1.1875rem;
+    font-weight: 440;
+    font-size: 1.0625rem;
     line-height: 1.6;
     color: var(--color-text-body);
     background-color: var(--color-bg);
@@ -125,7 +82,7 @@ body::before {
 .nav-logo {
     font-family: var(--font-display);
     font-size: 1.55rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--color-text-strong);
     text-decoration: none;
     letter-spacing: -0.03em;
@@ -228,10 +185,8 @@ a {
     animation: lp-rise 0.6s 0.04s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
 
     em {
-        font-family: var(--font-body);
-        font-style: italic;
-        font-weight: 500;
-        letter-spacing: -0.01em;
+        font-style: normal;
+        font-weight: 600;
         color: var(--color-accent);
     }
 }
@@ -385,6 +340,22 @@ a {
     line-height: 1.45;
     color: var(--color-text-muted);
     margin-top: 5px;
+}
+
+// bearcove labs
+.labs {
+    margin-bottom: 96px;
+}
+
+.labs-body {
+    max-width: 60ch;
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.55;
+        color: var(--color-text-body);
+        margin-bottom: 16px;
+    }
 }
 
 // Content creation

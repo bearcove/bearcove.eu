@@ -1,6 +1,6 @@
 +++
 title = "bearcove"
-description = "Teaching Rust, making videos, maintaining open-source software"
+description = "A Rust ecosystem, content creation, applied ML & linguistics, and vixen builds"
 
 [extra]
 hero = "For a <em>more ambitious</em> Rust ecosystem."
