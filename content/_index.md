@@ -1,21 +1,21 @@
 +++
 title = "bearcove"
-description = "Open-source Rust, long-form writing and video, and applied ML — held to an uncommon standard."
+description = "rust, open-source, applied ML"
 
 [extra]
-hero = "Obsessed with <em>excellence</em>."
+hero = "<em>bear</em> with us"
 
 [[extra.projects]]
 name = "facet"
 url = "https://facet.rs"
 kind = "reflection"
-tagline = "Reflection for Rust types: serialization, deserialization, CLI parsing, config, schemas, RPC and more — from a single derive. vox and figue now build on facet."
+tagline = "Rust reflection framework, on which serialization, deserialization, CLI parsing, config, schemas, RPC, database bindings, etc. are built."
 
 [[extra.projects]]
 name = "dodeca"
 url = "https://dodeca.bearcove.eu/"
 kind = "static sites"
-tagline = "A very opinionated static site generator that caches properly and makes development look like production."
+tagline = "A very opinionated static site generator with a rich featurese including editor integration, LSP, wiki-style editing, font subsetting, etc."
 
 [[extra.projects]]
 name = "stax"
@@ -27,7 +27,7 @@ tagline = "A sampling profiler for macOS and Linux: live flamegraphs, top-N func
 name = "tracey"
 url = "https://tracey.bearcove.eu/"
 kind = "traceability"
-tagline = "Spec coverage for code: write requirements as rules, map them to implementation and tests, and track what's actually covered."
+tagline = "Traceability tooling with support for multiple spec languages and programmingl anguages: write requirements as rules, map them to implementation and tests, and track what's actually covered."
 +++
 
-bearcove is [@fasterthanlime](https://fasterthanli.me) in company form
+pursuing excellence in: applied ML, rust crates, videos and articles
