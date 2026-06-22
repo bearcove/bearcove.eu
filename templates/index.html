@@ -29,18 +29,6 @@
         </a>
         {% endfor %}
     </div>
-
-    <div class="crates">
-        <span class="eyebrow eyebrow-quiet">Smaller crates</span>
-        <div class="crate-grid">
-            {% for c in section.extra.crates %}
-            <a class="crate" href="{{ c.url }}">
-                <span class="crate-name">{{ c.name }}</span>
-                <span class="crate-tagline">{{ c.tagline }}</span>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
 </section>
 
 <section class="labs">

@@ -1,60 +1,33 @@
 +++
 title = "bearcove"
-description = "A Rust ecosystem, content creation, applied ML & linguistics, and vixen builds"
+description = "Open-source Rust, long-form writing and video, and applied ML — held to an uncommon standard."
 
 [extra]
-hero = "For a <em>more ambitious</em> Rust ecosystem."
-
-[[extra.projects]]
-name = "vixen"
-url = "https://vixen.rs/"
-kind = "build system"
-tagline = "An in-progress build system for Rust, C, C++ etc."
+hero = "Obsessed with <em>excellence</em>."
 
 [[extra.projects]]
 name = "facet"
 url = "https://facet.rs"
 kind = "reflection"
-tagline = "Reflection for Rust types, enables serialization, deserialization, CLI, schemas, DB, codegen, RPC etc. with a single derive"
-
-[[extra.projects]]
-name = "vox"
-url = "https://vox.bearcove.eu/"
-kind = "rpc"
-tagline = "Rust-native RPC (supports TypeScript & Swift as well), relies on facet, comes with its own JIT for performance and forwards+backwards-compatibility."
+tagline = "Reflection for Rust types: serialization, deserialization, CLI parsing, config, schemas, RPC and more — from a single derive. vox and figue now build on facet."
 
 [[extra.projects]]
 name = "dodeca"
 url = "https://dodeca.bearcove.eu/"
 kind = "static sites"
-tagline = "A very opinionated static site generator that tries its best to cache properly and to make dev look like production."
+tagline = "A very opinionated static site generator that caches properly and makes development look like production."
 
 [[extra.projects]]
 name = "stax"
 url = "https://stax.bearcove.eu/"
 kind = "profiler"
-tagline = "A sampling profiler for macOS and Linux: live flamegraphs, top-N functions, annotated disassembly, off-CPU accounting. Somewhere between perf, samply and Instruments.app"
+tagline = "A sampling profiler for macOS and Linux: live flamegraphs, top-N functions, annotated disassembly, off-CPU accounting. Somewhere between perf, samply and Instruments.app."
 
 [[extra.projects]]
-name = "figue"
-url = "https://figue.bearcove.eu/"
-kind = "config"
-tagline = "A parser for CLI arguments, config files, and environment variables — powered by facet. Generates inline help, HTML help, exports JSON schemas, tracks provenance of config, allow env substitutions, and more."
-
-[[extra.crates]]
-name = "rediff"
-url = "https://github.com/bearcove/rediff"
-tagline = "A diff and assertion library for Facet types."
-
-[[extra.crates]]
-name = "squiggles"
-url = "https://github.com/bearcove/squiggles"
-tagline = "An LSP that runs cargo nextest and reports results as diagnostics."
-
-[[extra.crates]]
-name = "rc-zip"
-url = "https://github.com/bearcove/rc-zip"
-tagline = "A sans-io ZIP implementation focused on real-world compatibility."
+name = "tracey"
+url = "https://tracey.bearcove.eu/"
+kind = "traceability"
+tagline = "Spec coverage for code: write requirements as rules, map them to implementation and tests, and track what's actually covered."
 +++
 
 bearcove is [@fasterthanlime](https://fasterthanli.me) in company form

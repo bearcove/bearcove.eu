@@ -5,7 +5,7 @@
 :root {
     color-scheme: light dark;
 
-    --font-display: 'League Spartan', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', ui-sans-serif, system-ui, -apple-system, sans-serif;
     --font-body: 'Commissioner', ui-sans-serif, system-ui, -apple-system, sans-serif;
     --font-mono: 'Datatype', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
     --max-width: 980px;
@@ -130,17 +130,16 @@ a {
 .eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
+    gap: 10px;
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0;
     color: var(--color-accent);
 
     &::before {
         content: "";
-        width: 28px;
+        width: 22px;
         height: 1px;
         background: var(--color-accent);
         opacity: 0.6;
@@ -280,10 +279,9 @@ a {
 }
 
 .pc-kind {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.13em;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
     color: var(--color-accent);
     margin-top: 10px;
 }
