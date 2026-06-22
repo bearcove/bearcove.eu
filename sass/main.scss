@@ -104,6 +104,7 @@ body::before {
         text-decoration: none;
         font-size: 0.8rem;
         letter-spacing: 0.01em;
+        text-transform: lowercase;
         transition: color 0.15s ease;
 
         &:hover {
@@ -135,6 +136,7 @@ a {
     font-size: 0.92rem;
     font-weight: 600;
     letter-spacing: 0;
+    text-transform: lowercase;
     color: var(--color-accent);
 
     &::before {
@@ -547,8 +549,8 @@ blockquote {
     font-family: var(--font-mono);
     font-size: 0.72rem;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-transform: lowercase;
+    letter-spacing: 0;
     color: var(--color-text-muted);
     margin-bottom: 14px;
 
@@ -607,7 +609,9 @@ blockquote {
 .hosting-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    // match the main legal-grid column gap (48px) so the right-hand
+    // hosting entry lines up with the registration / publication columns
+    gap: 48px;
 }
 
 .hosting-entry p {
