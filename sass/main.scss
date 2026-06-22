@@ -10,20 +10,20 @@
   --font-mono: "Datatype", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --max-width: 980px;
 
-  // cold mint-green, white in light / ink in dark
+  // bearcove blue accent, white in light / ink in dark
   --color-bg: light-dark(#ffffff, #080c0b);
   --color-bg-subtle: light-dark(#f2f3f3, #101714);
   --color-text: light-dark(#1a201d, #ccd4d0);
   --color-text-strong: light-dark(#060b09, #e6ece9);
   --color-text-body: light-dark(#1a201d, #ccd4d0);
   --color-text-muted: light-dark(#4a524d, #909a95);
-  --color-link: light-dark(#0d8f63, #4fd6a8);
-  --color-link-hover: light-dark(#0a6b4b, #7ee3bf);
+  --color-link: light-dark(#365dc0, #6c87e6);
+  --color-link-hover: light-dark(#2b4ba8, #8aa2f2);
   --color-border: light-dark(#ebedec, #18201c);
   --color-border-accent: light-dark(#d9dcdb, #27302b);
-  --color-accent: light-dark(#0d8f63, #4fd6a8);
-  --color-shadow: light-dark(rgba(20, 40, 30, 0.07), rgba(0, 0, 0, 0.4));
-  --color-glow: light-dark(rgba(13, 143, 99, 0.05), rgba(79, 214, 168, 0.06));
+  --color-accent: light-dark(#365dc0, #6c87e6);
+  --color-shadow: light-dark(rgba(20, 30, 60, 0.07), rgba(0, 0, 0, 0.4));
+  --color-glow: light-dark(rgba(54, 93, 192, 0.05), rgba(108, 135, 230, 0.08));
 }
 
 *,
