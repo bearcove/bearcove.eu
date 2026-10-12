@@ -27,9 +27,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Straight from the GitHub release: the installer's bucket
+      # (bearcove-dist) no longer serves dodeca.
       - name: Install dodeca
         run: |
-          curl --proto '=https' --tlsv1.2 -LsSf https://github.com/bearcove/dodeca/releases/latest/download/dodeca-installer.sh | sh
+          mkdir -p ~/.cargo/bin
+          curl --proto '=https' --tlsv1.2 -fsSL https://github.com/bearcove/dodeca/releases/download/v0.17.0/dodeca-x86_64-unknown-linux-gnu.tar.xz | tar xJ -C ~/.cargo/bin
 
       - name: Build website
         run: ~/.cargo/bin/ddc build
