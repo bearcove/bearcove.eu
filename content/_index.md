@@ -15,7 +15,7 @@ tagline = "Rust reflection framework, on which serialization, deserialization, C
 name = "dodeca"
 url = "https://dodeca.bearcove.eu/"
 kind = "static sites"
-tagline = "A very opinionated static site generator with a rich featurese including editor integration, LSP, wiki-style editing, font subsetting, etc."
+tagline = "A very opinionated static site generator with a rich feature set including editor integration, LSP, wiki-style editing, font subsetting, etc."
 
 [[extra.projects]]
 name = "stax"
@@ -27,7 +27,7 @@ tagline = "A sampling profiler for macOS and Linux: live flamegraphs, top-N func
 name = "tracey"
 url = "https://tracey.bearcove.eu/"
 kind = "traceability"
-tagline = "Traceability tooling with support for multiple spec languages and programmingl anguages: write requirements as rules, map them to implementation and tests, and track what's actually covered."
+tagline = "Traceability tooling with support for multiple spec languages and programming languages: write requirements as rules, map them to implementation and tests, and track what's actually covered."
 +++
 
 pursuing excellence in: applied ML, rust crates, videos and articles
