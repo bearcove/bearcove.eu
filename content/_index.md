@@ -1,33 +1,5 @@
 +++
 title = "bearcove"
-description = "rust, open-source, applied ML"
-
-[extra]
-hero = "<em>bear</em> with us"
-
-[[extra.projects]]
-name = "facet"
-url = "https://facet.rs"
-kind = "reflection"
-tagline = "Rust reflection framework, on which serialization, deserialization, CLI parsing, config, schemas, RPC, database bindings, etc. are built."
-
-[[extra.projects]]
-name = "dodeca"
-url = "https://dodeca.bearcove.eu/"
-kind = "static sites"
-tagline = "A very opinionated static site generator with a rich feature set including editor integration, LSP, wiki-style editing, font subsetting, etc."
-
-[[extra.projects]]
-name = "stax"
-url = "https://stax.bearcove.eu/"
-kind = "profiler"
-tagline = "A sampling profiler for macOS and Linux: live flamegraphs, top-N functions, annotated disassembly, off-CPU accounting. Somewhere between perf, samply and Instruments.app."
-
-[[extra.projects]]
-name = "tracey"
-url = "https://tracey.bearcove.eu/"
-kind = "traceability"
-tagline = "Traceability tooling with support for multiple spec languages and programming languages: write requirements as rules, map them to implementation and tests, and track what's actually covered."
 +++
 
-pursuing excellence in: applied ML, rust crates, videos and articles
+<div class="home-disc" aria-hidden="true"></div><h1>Software, systems<br> &amp; applied research.</h1><p class="home-intro">bearcove is a European software company. We work on speech recognition, programming languages and distributed computation. We build products, develop open-source tools and publish what we learn.</p><div class="gateways"><a href="/research/"><h2>Research</h2><p>Machine learning, speech and the languages we use to build software.</p><span class="gateway-link">Explore the work</span></a><a href="/products/"><h2>Products</h2><p>avette, kobl, vix and continuum. Different tools, connected by the work behind them.</p><span class="gateway-link">Meet the products</span></a><a href="/publishing/"><h2>Publishing</h2><p>Deep dives into Rust and systems by fasterthanlime. The Self-Directed Research archive.</p><span class="gateway-link">Read, watch, listen</span></a></div><div class="home-half" aria-hidden="true"></div>

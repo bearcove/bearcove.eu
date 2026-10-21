@@ -1,47 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-    {% if config.description %}
-    <meta name="description" content="{{ config.description }}">{% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400..700&family=Datatype:wght@400;500;700&family=Outfit:wght@400..700&display=swap">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="icon" type="image/jxl" href="/favicon.jxl">
-</head>
-
-<body>
-    <div class="container">
-        <header class="header">
-            <nav class="nav">
-                <a href="/" class="nav-logo">bearcove</a>
-                <ul class="nav-links">
-                    <li><a href="https://fasterthanli.me">articles</a></li>
-                    <li><a href="https://youtube.com/@fasterthanlime">videos</a></li>
-                    <li><a href="https://github.com/bearcove">open-source</a></li>
-                    <li><a href="/legal/">legal</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="{% block main_class %}main-content{% endblock main_class %}">
-            {% block content %}{% endblock content %}
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024&ndash;{{ now(format="%Y") }} bearcove SARL &mdash; <a href="/legal/">Legal</a></p>
-                <p class="footer-links">
-                    <a href="mailto:hi@bearcove.eu">Contact</a>
-                </p>
-            </div>
-        </footer>
-    </div>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% block title %}bearcove{% endblock title %}</title><meta name="description" content="bearcove is a European software company. Applied research, programming languages, speech recognition and software engineering."><link rel="stylesheet" href="/main.css"><script src="/site.js" defer></script><link rel="icon" type="image/jxl" href="/favicon.jxl"></head>
+<body class="{% block body_class %}{% endblock body_class %}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="/" aria-label="bearcove home">bearcove</a><nav aria-label="Main"><a href="/research/"{% if page is defined %}{% if page.extra.key == "research" %} aria-current="page"{% endif %}{% endif %}>Research</a><a href="/products/"{% if page is defined %}{% if page.extra.key == "products" %} aria-current="page"{% endif %}{% endif %}>Products</a><a href="/publishing/"{% if page is defined %}{% if page.extra.key == "publishing" %} aria-current="page"{% endif %}{% endif %}>Publishing</a><a href="/company/"{% if page is defined %}{% if page.extra.key == "company" %} aria-current="page"{% endif %}{% endif %}>Company</a></nav></header>
+<main id="main" class="{% block main_class %}interior{% endblock main_class %}">{% block content %}{% endblock content %}</main>
+<footer class="site-footer"><span>© 2024–2026 bearcove SARL</span><nav aria-label="Footer"><a href="/legal/">Legal notice</a><a href="mailto:hi@bearcove.eu">hi@bearcove.eu</a><a href="https://github.com/bearcove">GitHub</a></nav></footer>
+<div class="sr-only" role="status" id="copy-status" aria-live="polite"></div>
 </body>
-
 </html>
